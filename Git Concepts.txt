@@ -65,3 +65,13 @@ to delete a specific branch :
 git branch -d branch-name
 
 access token : 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
+-----------------
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+-----------------
