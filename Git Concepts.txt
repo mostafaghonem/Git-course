@@ -1,0 +1,67 @@
+concepts:
+Repository (Repo): مستودع
+place that holds Project .
+
+Branch : فرع
+فرع من البرودجيكت الرئيسى
+
+local Repo : local project that you work on
+
+Remote Repo : 
+
+commit : (snapshot or checkpoint in your local repo): التعديل الل انت عملته على ال local repo 
+
+clone : from local or remote Repo :  استنساخ 
+
+push : upload local changes to remote Repo 
+
+pull : pull changes from remote Repo to local 
+
+pull Request : (tell other about your changes to pull it from local to remote)
+
+=====================================================
+important notes : 
+- create Repo for every project .
+- create a new branch for every feature or enhancement .
+- No need to conect to remote repo when working .
+=====================================================
+Readme.md file : 
+doc for md syntax : https://guides.github.com/features/mastering-markdown/
+ده ملف بيتكتب فيه الخطوات المهمة الل المفروض تعملها او اى حاجة تخص البروجيت 
+md : standard for mark down .
+
+Heading :
+# the largest heading
+## the second largest heading
+##### the smallest largest heading
+
+=====================================================
+Commands : 
+git clone -link of Repo-
+git status : status
+git add (File-Name) : add files to staging area
+git add * : add all files
+git reset head (File-Name) : remove file from staging area
+git commit -m "type here the Commit message ex: the bug U fix or adding new feature"
+git branch : display branch name that i works on 
+git remote -v : display reomte branch that i works on
+git push (RemoteName) (BranchName) : push special branch to remote branch
+git log : Display Commits that have done on project .
+touch file-name : to create new file .
+
+to set up the remote repository:
+git remote add origin https://github.com/VijayNew/NewExample.git
+
+to craete new branch:
+git branch branch-name
+
+to switch to a specific branch :
+git checkout branch-name
+
+to craete new branch and switch to it :
+git checkout -b branch-name
+
+to delete a specific branch :
+git branch -d branch-name
+
+access token : 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
