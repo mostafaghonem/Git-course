@@ -34,7 +34,15 @@ Heading :
 # the largest heading
 ## the second largest heading
 ##### the smallest largest heading
-
+=====================================================
+1 - Working Directory: ده الفولدر الل عجهازى شغال عليه
+    git add file-name : to add file to staging area
+	git reset head file-name : to remove file from staging area
+2 - Staging Area : دى المنطقة الل بحط فيها الملف عشان اقدر اعمله Commit 
+    git commit -m "message" : to save changes of local repo as i can push it to remote repo
+3 - Local Repo : 
+    git push remoteRepo branchName : to save changes to remote repo
+4 - Remote Repo :
 =====================================================
 Commands : 
 git clone -link of Repo-
@@ -43,9 +51,10 @@ git add (File-Name) : add files to staging area
 git add * : add all files
 git reset head (File-Name) : remove file from staging area
 git commit -m "type here the Commit message ex: the bug U fix or adding new feature"
-git branch : display branch name that i works on 
+git branch : display branchs names that i works on (on local repo)
 git remote -v : display reomte branch that i works on
-git push (RemoteName) (BranchName) : push special branch to remote branch
+git push (RemoteRepo) (BranchName) : push special branch to remote branch
+git pull RemoteRepo : get changes from remoteRepo to local Repo and merge it with old files (git pull : git fetch(get changes) + git merge)
 git log : Display Commits that have done on project .
 touch file-name : to create new file .
 
