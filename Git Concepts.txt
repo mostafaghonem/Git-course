@@ -108,6 +108,25 @@ git merge new-branch-name
 then : if you need to delete the new branch
 git branch -d branch-name
 =================
+to save files into stash
+first add files to staging area
+git stash
+
+to list files in stash
+git stash list
+
+to pop file fom stash (if does not specify the file , it will pop last added file)
+git stash pop
+
+to pop specific file from stash
+git stash pop stash@{id-of-file}
+
+to add file to stash with a message
+git stash save "message"
+
+to pop from stash without deleting the file from stash , and it will pop the last added file
+git stash apply
+=================
 access token : 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
 -----------------
 Author identity unknown
