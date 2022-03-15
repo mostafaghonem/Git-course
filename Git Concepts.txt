@@ -45,11 +45,12 @@ Heading :
 4 - Remote Repo :
 =====================================================
 Commands : 
+==========
 git clone -link of Repo-
 git status : status
 git add (File-Name) : add files to staging area
 git add * : add all files
-git reset head (File-Name) : remove file from staging area
+git reset head (File-Name) or git restore --stage file-name : remove file from staging area  
 git commit -m "type here the Commit message ex: the bug U fix or adding new feature"
 git branch : display branchs names that i works on (on local repo)
 git remote -v : display reomte branch that i works on
@@ -141,6 +142,16 @@ git stash apply
 
 to clear all files in stash
 git stash clear
+=================
+to open file with VS code
+code file-name
+
+to open folder in VS code 
+code .
+=================
+to delete modified files before adding it to stage area
+git clean -n : to review files will be deleted
+git clean -f : to delete all files that modified
 =================
 access token : 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
 -----------------
