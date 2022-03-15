@@ -118,6 +118,9 @@ git stash list
 to pop file fom stash (if does not specify the file , it will pop last added file)
 git stash pop
 
+to pop specific file from stash
+git stash pop stash@{id-of-file}
+
 to add file to stash with a message
 git stash save "message"
 

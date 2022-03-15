@@ -112,20 +112,35 @@ to save files into stash
 first add files to staging area
 git stash
 
+to add file to stash with a message
+git stash save "message"
+
 to list files in stash
 git stash list
 
 to pop file fom stash (if does not specify the file , it will pop last added file)
 git stash pop
 
+to delete from stash (if does not specify the file , it will drop last added file)
+git stash drop
+
+to show the file in stash (if does not specify the file , it will show last added file)
+git stash show 
+
 to pop specific file from stash
 git stash pop stash@{id-of-file}
 
-to add file to stash with a message
-git stash save "message"
+to delete specific file from stash
+git stash drop stash@{id-of-file}
+
+to show specific file from stash
+git stash show stash@{id-of-file}
 
 to pop from stash without deleting the file from stash , and it will pop the last added file
 git stash apply
+
+to clear all files in stash
+git stash clear
 =================
 access token : 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
 -----------------
