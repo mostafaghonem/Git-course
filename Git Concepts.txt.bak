@@ -41,7 +41,7 @@ Heading :
 2 - Staging Area : دى المنطقة الل بحط فيها الملف عشان اقدر اعمله Commit 
     git commit -m "message" : to save changes of local repo as i can push it to remote repo
 3 - Local Repo : 
-    git push remoteName branchName : to save changes to remote repo
+    git push remoteRepo branchName : to save changes to remote repo
 4 - Remote Repo :
 =====================================================
 Commands : 
@@ -53,13 +53,32 @@ git reset head (File-Name) : remove file from staging area
 git commit -m "type here the Commit message ex: the bug U fix or adding new feature"
 git branch : display branchs names that i works on (on local repo)
 git remote -v : display reomte branch that i works on
-git push (RemoteName) (BranchName) : push special branch to remote branch
+git push (RemoteRepo) (BranchName) : push special branch to remote branch
+git pull RemoteRepo : get changes from remoteRepo to local Repo and merge it with old files (git pull : git fetch(get changes) + git merge)
+git config -l : list configuration what you will need.
+git config --global --edit : open editor to edit the configuartion 
 git log : Display Commits that have done on project .
 touch file-name : to create new file .
+=================
+to change user.name or user.mail from cinfig
+git config --global user.name "mostafaghonem90@yahoo"
+git config --global user.mail "mostafaghonem90@yahoo"
+=================
+to add SSH to Github
+-> ssh-keygen -t rsa -b 4096 -C "mostafaghonem90@yahoo.com"
+the file location will be in users/mostafa ghonem/.ssh/id_rsa
+then -> cat id_rsa
+then copy the key and add it in Github 
 
+to test the key :
+-> ssh -T git@github.com 
+=================
 to set up the remote repository:
 git remote add origin https://github.com/VijayNew/NewExample.git
-
+=================
+-u : make git pull changes then push your code
+git push -u origin master
+=================
 to craete new branch:
 git branch branch-name
 
