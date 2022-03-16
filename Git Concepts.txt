@@ -58,7 +58,6 @@ git push (RemoteRepo) (BranchName) : push special branch to remote branch
 git pull RemoteRepo : get changes from remoteRepo to local Repo and merge it with old files (git pull : git fetch(get changes) + git merge)
 git config -l : list configuration what you will need.
 git config --global --edit : open editor to edit the configuartion 
-git log : Display Commits that have done on project .
 touch file-name : to create new file .
 =================
 to change user.name or user.mail from cinfig
@@ -152,6 +151,35 @@ code .
 to delete modified files before adding it to stage area
 git clean -n : to review files will be deleted
 git clean -f : to delete all files that modified
+=================
+Head : is a pointer point to the last commit in your Repo.
+
+git log : Display Commits that have done on project .
+
+to delete a commit make the head point to the commit before this commit 
+git reset --hard hash-of the commit that you want the head point to it
+=================
+to ignore files from push it to the centralized server (Github)
+create file .gitignore
+and add all files you need on it
+ex: *.log will ignore all files .log
+
+to add file in .gitignore
+write file or folder name on it 
+
+to force add file to staging area to push it as this file in .gitignore
+git add -f file-name
+=================
+tag: to mark part of code in period of time this used to mark versions of prgrams
+
+to list current tags 
+git tag
+
+to create light weight tag after commit , this tag takes the message of the commit
+git tag tag-name ex: git tag v1.0
+
+to push the created tag
+git push (remote-Repo) tag-name ex: git push origin v1.0
 =================
 access token : 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
 -----------------
