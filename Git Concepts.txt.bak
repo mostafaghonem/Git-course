@@ -231,6 +231,9 @@ and m for writting a message
 to open editor to write your message of commiting
 git commit -a : after modification of files
 =================
+to discard changes of a modified file
+git checkout -- file-name
+=================
 access token : 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
 -----------------
 Author identity unknown
