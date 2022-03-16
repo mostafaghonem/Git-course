@@ -170,13 +170,16 @@ write file or folder name on it
 to force add file to staging area to push it as this file in .gitignore
 git add -f file-name
 =================
-tag: to mark part of code in period of time this used to mark versions of prgrams
+tag: to mark part of code at a period of time this used to mark versions of prgrams
 
 to list current tags 
 git tag
 
-to create light weight tag after commit , this tag takes the message of the commit
+to create light weight tag after push to remote-repo , this tag takes the message of the last commit
 git tag tag-name ex: git tag v1.0
+
+to create anotated tag 
+git tag -a tag-name -m "Description of the tag"
 
 to push the created tag
 git push (remote-Repo) tag-name ex: git push origin v1.0

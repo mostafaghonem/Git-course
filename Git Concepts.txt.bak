@@ -177,6 +177,9 @@ git tag
 
 to create light weight tag after commit , this tag takes the message of the commit
 git tag tag-name ex: git tag v1.0
+
+to push the created tag
+git push (remote-Repo) tag-name ex: git push origin v1.0
 =================
 access token : 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
 -----------------
