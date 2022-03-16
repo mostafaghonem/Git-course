@@ -205,7 +205,7 @@ to show changes of modified files that currently on working directory
 git diff
 
 to show changes of modified files only words that changed that currently on working directory 
-git diff --colors-words
+git diff --color-words
 
 to show changes of modified files that currently on staging area
 git diff --staged
