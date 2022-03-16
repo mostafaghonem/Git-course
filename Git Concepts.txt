@@ -210,7 +210,11 @@ git diff --color-words
 to show changes of modified files that currently on staging area
 git diff --staged
 
-to show changes on a commit
+to compare between 2 commits to show changes between them
+git diff firstCommitHash..secondCommitHash
+and we can use --color-words here: git diff hash1..hash2 --color-words
+
+to show changes on a a specific commit
 git show hash-of-the-commit
 =================
 to remove a file 
@@ -221,8 +225,14 @@ git mv oldfile-name newfile-name
 =================
 to move file from working directory to Repo skipping the step of staging area
 git commit -am "message"
--a for skipping the step of staging area and commit directly
+-a for committing all files directly
 and m for writting a message
+
+to open editor to write your message of commiting
+git commit -a : after modification of files
+=================
+to discard changes of a modified file
+git checkout -- file-name
 =================
 access token : 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
 -----------------
