@@ -1,3 +1,10 @@
+Git : is a version control system
+==============================
+git archi has 3 trees:
+3- repo
+2- staging area
+1- working directory
+===================
 concepts:
 Repository (Repo): مستودع
 place that holds Project .
@@ -155,6 +162,10 @@ git clean -f : to delete all files that modified
 Head : is a pointer point to the last commit in your Repo.
 
 git log : Display Commits that have done on project .
+git log -n number of last commit you want to display ex: git log -n 5
+
+to search for a word or any thing in the commits 
+git log --grep="regix"
 
 to delete a commit make the head point to the commit before this commit 
 git reset --hard hash-of the commit that you want the head point to it
@@ -170,16 +181,40 @@ write file or folder name on it
 to force add file to staging area to push it as this file in .gitignore
 git add -f file-name
 =================
-tag: to mark part of code in period of time this used to mark versions of prgrams
+tag: to mark part of code at a period of time this used to mark versions of prgrams
 
 to list current tags 
 git tag
 
-to create light weight tag after commit , this tag takes the message of the commit
+to create light weight tag after push to remote-repo , this tag takes the message of the last commit
 git tag tag-name ex: git tag v1.0
+
+to create anotated tag 
+git tag -a tag-name -m "Description of the tag"
 
 to push the created tag
 git push (remote-Repo) tag-name ex: git push origin v1.0
+
+to delete a tag from local Repo
+git tag -d tag-name
+
+to delete tag from remote Repo
+git push origin --delete tag-name
+=================
+to show changes of modified files that currently on working directory
+git diff
+
+to show changes of modified files only words that changed that currently on working directory 
+git diff --colors-words
+
+to show changes of modified files that currently on staging area
+git diff --staged
+=================
+to remove a file 
+git rm file-name
+=================
+to rename a file: rename equvalent to move (mv)
+git mv oldfile-name newfile-name
 =================
 access token : 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
 -----------------
