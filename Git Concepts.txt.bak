@@ -234,8 +234,11 @@ git commit -a : after modification of files
 to discard changes of a modified file
 git checkout -- file-name
 =================
-to change commit message 
+to change commit  message 
 git commit --amend -m "the new message"
+=================
+to undo changes in a commit 
+git revert hash-of-that-commit
 =================
 access token : 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
 -----------------

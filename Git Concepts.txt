@@ -155,7 +155,7 @@ code file-name
 to open folder in VS code 
 code .
 =================
-to delete modified files before adding it to stage area
+to delete untracked modified files before adding it to stage area
 git clean -n : to review files will be deleted
 git clean -f : to delete all files that modified
 =================
@@ -239,6 +239,9 @@ git commit --amend -m "the new message"
 =================
 to undo changes in a commit 
 git revert hash-of-that-commit
+=================
+to remove tracked file from stagiong area to be ignored
+git rm --cached file-name
 =================
 access token : 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
 -----------------
