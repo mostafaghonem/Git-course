@@ -243,8 +243,7 @@ git revert hash-of-that-commit
 to remove tracked file from stagiong area to be ignored
 git rm --cached file-name
 =================
-access token : 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
------------------
+
 Author identity unknown
 
 *** Please tell me who you are.
